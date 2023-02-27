@@ -17,17 +17,40 @@
         }
         .nav{
             width: 100%;
-            background-color: gray;
+            height: 46px;
+            background-color: #0000007e;
         }
-        .nav li{
+        .nav ul>li{
             display: inline-block;
-            width: calc(100%/9);
-        } 
-        .nav li:hover .nav li{
-            background-color: rgb(26, 185, 26);
         }
-        .main i{
-            font-size: 24px;
+        .nav li a{
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            line-height: 46px;
+            padding: 0 24px;
+        }
+
+        .menu{
+            max-width: 200px;
+            background-color: rgba(0, 0, 0, .1);
+        }  
+        .menu ul li:first-child{
+            padding-top: 10px;
+        }     
+        .menu a{
+            text-decoration: none;
+            color: #000;
+            display: block;
+            padding: 4px 0;
+        }
+
+        .content{
+            margin-left: 4px;
+        }
+        .content .slider{
+            width: 800px;
+            height: 80px;
         }
     </style>
 </head>
@@ -39,34 +62,69 @@
         </div>
         <div class="nav">
             <ul>
-                <li class="main">
-                    <i class="fa-solid fa-house"></i>
-                </li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
                 <li>
-                    TUTORIALS
-                    <i class="fa-solid fa-chevron-down"></i>
+                    <a href="">HOME</a>
                 </li>
                 <li>
-                    REFERENCES
-                    <i class="fa-solid fa-chevron-down"></i>
+                    <a href="">HTML</a>
                 </li>
                 <li>
-                    EXAMPLES
-                    <i class="fa-solid fa-chevron-down"></i>
+                    <a href="">CSS</a>
                 </li>
-                <li class="main">
-                    <i class="fa-solid fa-earth-americas"></i>
+                <li>
+                    <a href="">JAVASCRIPT</a>
                 </li>
-                <li class="main">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <li>
+                    <a href="">TUTORIALS
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="">REFERENCES
+
+                    </a>
+                </li>
+                <li>
+                    <a href="">EXAMPLES</a>
+                </li>
+                <li>
+                    <a href="">ICON</a>
+                </li>
+                <li>
+                    <a href="">ICON</a>
                 </li>
             </ul>
         </div>
         <div class="content">
-
+            <div class="menu">
+                <ul>
+                    <li><h2>HTML Tutorial</h2></li>
+                    <li><a href="">HTML HOME</a></li>
+                    <li><a href="">HTML Introduction</a></li>
+                    <li><a href="">HTML Editors</a></li>
+                    <li><a href="">HTML Basic</a></li>
+                    <li><a href="">HTML Elements</a></li>
+                    <li><a href="">HTML Attributes</a></li>
+                    <li><a href="">HTML Heading</a></li>
+                    <li><a href="">HTML Paragraphs</a></li>
+                    <li><a href="">HTML Styles</a></li>
+                    <li><a href="">HTML Formatting</a></li>
+                    <li><a href="">HTML Quatations</a></li>
+                    <li><a href="">HTML Computercode</a></li>
+                    <li><a href="">HTML Comments</a></li>
+                    <li><a href="">HTML CSS</a></li>
+                    <li><a href="">HTML Links</a></li>
+                    <li><a href="">HTML Imgaes</a></li>
+                    <li><a href="">HTML Tables</a></li>
+                    <li><a href="">HTML Lists</a></li>
+                    <li><a href="">HTML Blocks</a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <div class="slider">
+                    <img src="" alt="">
+                </div>
+            </div>
         </div>
     </div>
 </body>

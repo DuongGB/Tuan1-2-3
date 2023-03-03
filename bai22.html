@@ -12,16 +12,21 @@
             margin: 0;
             padding: 0;
         }
+        ::-webkit-scrollbar{
+            display: none;
+        }
         .header{
             text-align: center;
         }
         .nav{
+            top: 46px;
             width: 100%;
             height: 46px;
             background-color: #0000007e;
         }
         .nav ul>li{
             display: inline-block;
+            width: calc(100%9);
         }
         .nav li a{
             text-decoration: none;
@@ -29,28 +34,70 @@
             display: block;
             line-height: 46px;
             padding: 0 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-
+        .large{
+            font-size: 24px;
+            height: 100%;
+        }
+        .content{
+            display: flex;
+        }
         .menu{
+            display: inline-block;
             max-width: 200px;
+            height: 100vmax;
             background-color: rgba(0, 0, 0, .1);
         }  
         .menu ul li:first-child{
-            padding-top: 10px;
+            padding: 10px 10px;
         }     
         .menu a{
             text-decoration: none;
             color: #000;
             display: block;
-            padding: 4px 0;
+            padding: 4px 10px;
         }
 
-        .content{
-            margin-left: 4px;
+        .main{
+            flex: 1;
+            margin-left: 12px;
         }
-        .content .slider{
-            width: 800px;
-            height: 80px;
+        .slider{
+            margin: 8px 12px 24px 0px;
+            min-width: 1100px;
+            min-height: 80px;
+            border: 1px solid #dadada;
+        }
+        .slider img{
+            display: block;
+            min-width: 1000px;
+            height: 100px;
+            object-fit: cover;
+            object-position: top;
+        }
+        .container{
+
+        }
+        .sub-title{
+            display: flex;
+            justify-content: space-between;
+            padding: 8px;
+        }
+        .sub-title a{
+            text-decoration: none;
+            color: rgb(40, 185, 40);
+        }
+        .logo{
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            vertical-align: text-top;
+        }
+        .text{
+            line-height: 1.4;
         }
     </style>
 </head>
@@ -63,7 +110,7 @@
         <div class="nav">
             <ul>
                 <li>
-                    <a href="">HOME</a>
+                    <a class="nav-icon" href=""><i class="large fa-solid fa-house"></i></a>
                 </li>
                 <li>
                     <a href="">HTML</a>
@@ -76,22 +123,24 @@
                 </li>
                 <li>
                     <a href="">TUTORIALS
-                        
+                        <i class="fa-solid fa-chevron-down"></i>
                     </a>
                 </li>
                 <li>
                     <a href="">REFERENCES
-
+                        <i class="fa-solid fa-chevron-down"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="">EXAMPLES</a>
+                    <a href="">EXAMPLES
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="">ICON</a>
+                    <a class="nav-icon" href=""><i class="large fa-solid fa-earth-americas"></i></a>
                 </li>
                 <li>
-                    <a href="">ICON</a>
+                    <a class="nav-icon" href=""><i class="large fa-solid fa-magnifying-glass"></i></a>
                 </li>
             </ul>
         </div>
@@ -122,7 +171,50 @@
             </div>
             <div class="main">
                 <div class="slider">
-                    <img src="" alt="">
+                    <img src="https://i.ytimg.com/vi/gtY7VBru06Y/maxresdefault.jpg" alt="picture">
+                </div>
+                <div class="container">
+                    <h1>HTML (5) Tutorial</h1>
+                    <div class="sub-title">
+                        <h3>
+                            <a href="">
+                                <i class="fa-solid fa-angles-left"></i>
+                                W3Schools Home
+                            </a>
+                        </h3>
+                        <h3>
+                            <a href="">
+                                Next Chapter
+                                <i class="fa-solid fa-angles-right"></i>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="sub">
+                        <p><img class="logo" src="https://img.icons8.com/color/512/html-5--v1.png" alt="Logo">With HTML you can create your own Web site. This tutorial you everything about HTML. HTML is easy to learn - You will enjoy it.</p>
+                    </div>
+                    <div class="text">
+                        <h2>Examples in Every Chapter</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, neque ea! Dignissimos provident, debitis accusamus repellat vel, similique itaque necessitatibus ab dolorem ducimus fugiat veniam nostrum! Aliquam aliquid earum quod.
+                        Inventore magni velit tempora asperiores sed quae perspiciatis optio molestias maiores, commodi cum vitae impedit voluptas rem repellat quo fuga esse enim necessitatibus consequuntur amet. Neque, aliquam! Repellat, quo enim!
+                        Veritatis explicabo nesciunt deleniti odio accusamus illo tempora nisi quia maiores itaque adipisci quasi cumque quo est voluptate minus atque voluptatibus, placeat, ipsa dolor! Incidunt assumenda totam sequi perspiciatis distinctio?
+                        A fuga velit sint accusantium ea rerum porro ipsam aperiam molestias! Tenetur, officia repellendus ratione est similique voluptas aperiam excepturi magni. Sed quidem suscipit quod delectus! Ipsa quis accusantium non!
+                        Ipsam unde alias saepe sunt ab pariatur. Voluptas fugit explicabo iusto deserunt nam, quibusdam molestiae laborum. Voluptate molestiae dolorem facere officiis, ad atque odit culpa dolore quos nesciunt sequi. Culpa.
+                        Nobis voluptatibus sed modi? Illum odio a dolore exercitationem, aspernatur quos? Quidem nulla, rem quaerat tempore reprehenderit obcaecati deserunt, voluptate eos fugiat accusamus dignissimos ipsam culpa enim, a quia veniam!
+                        Natus, nisi quia temporibus mollitia non officia qui. Impedit ipsam eaque ipsa explicabo expedita repellat consequatur pariatur velit autem error, tempore nulla dolore earum ea illum nobis corrupti quam neque.
+                        Et sequi soluta natus facere iste hic nam, assumenda tempore laborum quasi amet aut sint illo necessitatibus odio aliquid molestiae voluptas qui eveniet! Officia laboriosam officiis illo mollitia? Dolorem, nam?
+                        Vel maiores velit repellat pariatur laboriosam dolorem odio laborum natus, saepe fuga expedita quaerat facere dignissimos, cum, officiis aliquam asperiores reiciendis nemo. Magnam id ut voluptatum excepturi in architecto nisi.
+                        Nemo ipsum sit minus quibusdam ullam temporibus cupiditate facere animi sapiente, repellat dolor tempora obcaecati quos dolores impedit vero ea placeat doloribus saepe distinctio pariatur neque doloremque voluptas. Hic, consequuntur?
+                        Pariatur dignissimos sint laboriosam accusamus? Ut ex beatae veniam adipisci doloribus! Sit exercitationem omnis ullam voluptas cupiditate quas animi, in labore nihil eaque totam saepe ut enim aliquam quae ex.
+                        In fuga amet minima dolorem eaque qui ad expedita nulla debitis, accusamus eos sed harum? Reprehenderit doloremque quidem provident nemo cumque, aperiam, alias dicta quisquam saepe tempora rerum cupiditate non.
+                        Quisquam error ipsa assumenda nulla explicabo asperiores dicta voluptatum ad tempore quasi impedit illo quia inventore nihil qui eos id corporis temporibus eius earum, accusantium blanditiis est. Perferendis, mollitia nesciunt!
+                        In aspernatur veniam ipsam quia ipsa numquam perferendis officia inventore doloribus deserunt nisi obcaecati excepturi veritatis voluptatem consequatur, similique impedit nostrum. Quaerat ut tempore quae asperiores autem quas nemo placeat?
+                        Exercitationem sapiente modi in soluta ullam id quaerat autem esse laborum accusantium, placeat ut! Facilis repellat veritatis, sapiente dolor eos ad officia porro facere quos voluptate doloremque aut alias expedita.
+                        Odit officiis impedit officia vel magni quisquam omnis ut minima, numquam tenetur voluptatum quo fugiat in nemo cumque earum dolorem eum libero nobis, suscipit, id non dolores illo. Cupiditate, debitis.
+                        At, tenetur autem. Tenetur provident explicabo odio deserunt, reiciendis quod pariatur iusto vel cum, ea consequuntur ut earum autem unde laborum ad similique qui neque, necessitatibus excepturi dolorum. Asperiores, dolore!
+                        Neque vel doloremque, sunt saepe iure quia. Perferendis impedit tempore culpa optio et consectetur at repellat deserunt dolor commodi, aut facere minima sint itaque ipsa, numquam laboriosam. Quas, asperiores necessitatibus.
+                        Quam iste eos qui iusto sunt, quos deleniti a harum nam laudantium. Aliquid similique qui optio nihil voluptates esse excepturi neque consequatur, voluptatibus maiores et, ullam iste quibusdam saepe distinctio.
+                        Sit esse corporis perferendis vel ullam velit ipsa enim, ea, nobis labore suscipit molestias, maiores repellat sint cumque iusto quasi deleniti itaque? Earum quis explicabo ex quibusdam maxime, voluptatibus architecto?</p>
+                    </div>
                 </div>
             </div>
         </div>
